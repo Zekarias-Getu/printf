@@ -3,15 +3,15 @@
 #include "main.h"
 
 /**
-* append_char - Adds multiple copies of a given character to the
-* \ end of a string
-* @str: The string whose ending is to be trimmed
-* @c: The character to add at the end of the string
-* @n: The number of times the character should be added
-* @can_free: Specifies if the given string can be freed
-*
-* Return: The new copy of the string, otherwise NULL
-*/
+ * append_char - Adds multiple copies of a given character to the
+ * \ end of a string
+ * @str: The string whose ending is to be trimmed
+ * @c: The character to add at the end of the string
+ * @n: The number of times the character should be added
+ * @can_free: Specifies if the given string can be freed
+ *
+ * Return: The new copy of the string, otherwise NULL
+ */
 char *append_char(char *str, char c, int n, char can_free)
 {
 	int i, size;
@@ -31,13 +31,13 @@ char *append_char(char *str, char c, int n, char can_free)
 }
 
 /**
-* delete_char - Removes copies of a given character from a string
-* @str: The string containing the character
-* @c: The character to remove from the string
-* @can_free: Specifies if the given string can be freed
-*
-* Return: The new copy of the string, otherwise NULL
-*/
+ * delete_char - Removes copies of a given character from a string
+ * @str: The string containing the character
+ * @c: The character to remove from the string
+ * @can_free: Specifies if the given string can be freed
+ *
+ * Return: The new copy of the string, otherwise NULL
+ */
 char *delete_char(char *str, char c, char can_free)
 {
 	char *new_str;
@@ -59,14 +59,14 @@ char *delete_char(char *str, char c, char can_free)
 }
 
 /**
-* insert_char - Inserts a character into a string
-* @str: The source string
-* @pos: The insertion position of the character
-* @c: The character to insert into the string
-* @can_free: Specifies if the given string can be freed
-*
-* Return: The trimmed copy, otherwise NULL
-*/
+ * insert_char - Inserts a character into a string
+ * @str: The source string
+ * @pos: The insertion position of the character
+ * @c: The character to insert into the string
+ * @can_free: Specifies if the given string can be freed
+ *
+ * Return: The trimmed copy, otherwise NULL
+ */
 char *insert_char(char *str, int pos, char c, char can_free)
 {
 	char *new_str;
@@ -91,12 +91,12 @@ char *insert_char(char *str, int pos, char c, char can_free)
 }
 
 /**
-* count_char - Counts the number of copies of a character in a string
-* @str: The source string
-* @c: The character to look for
-*
-* Return: The number of times the character was found
-*/
+ * count_char - Counts the number of copies of a character in a string
+ * @str: The source string
+ * @c: The character to look for
+ *
+ * Return: The number of times the character was found
+ */
 int count_char(char *str, char c)
 {
 	int count = 0, i;
@@ -107,13 +107,13 @@ int count_char(char *str, char c)
 }
 
 /**
-* str_cat - Concatenates two strings
-* @left: The left string
-* @right: The right string
-* @can_free: Specifies if the given strings can be freed
-*
-* Return: A pointer to the concatenated string
-*/
+ * str_cat - Concatenates two strings
+ * @left: The left string
+ * @right: The right string
+ * @can_free: Specifies if the given strings can be freed
+ *
+ * Return: A pointer to the concatenated string
+ */
 char *str_cat(char *left, char *right, char can_free)
 {
 	int left_length = str_len(left);
