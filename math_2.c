@@ -3,13 +3,13 @@
 #include "main.h"
 
 /**
- * div_by_10_exp - Divides a number by a power of 10
- * @num: The number to divide
- * @n: The power of 10
- * @can_free: Specifies whether the given number can be freed
- *
- * Return: The quotient of the number and the power of 10, otherwise NULL
- */
+* div_by_10_exp - Divides a number by a power of 10
+* @num: The number to divide
+* @n: The power of 10
+* @can_free: Specifies whether the given number can be freed
+*
+* Return: The quotient of the number and the power of 10, otherwise NULL
+*/
 char *div_by_10_exp(char *num, unsigned short n, char can_free)
 {
 	char *result;
@@ -52,11 +52,11 @@ char *div_by_10_exp(char *num, unsigned short n, char can_free)
 }
 
 /**
- * two_exp - Computes 2 raised to the given power
- * @n: The power
- *
- * Return: The value of 2 index n, otherwise NULL
- */
+* two_exp - Computes 2 raised to the given power
+* @n: The power
+*
+* Return: The value of 2 index n, otherwise NULL
+*/
 char *two_exp(short n)
 {
 	char *result, *pow_b5;
@@ -90,11 +90,11 @@ char *two_exp(short n)
 }
 
 /**
- * five_exp - Computes 5 raised to the given positive power
- * @n: The power
- *
- * Return: The value of 5 index n, otherwise NULL
- */
+* five_exp - Computes 5 raised to the given positive power
+* @n: The power
+*
+* Return: The value of 5 index n, otherwise NULL
+*/
 char *five_exp(unsigned short n)
 {
 	char *result, *base;
@@ -120,11 +120,11 @@ char *five_exp(unsigned short n)
 }
 
 /**
- * two_pexp - Computes 2 raised to the given positive power
- * @n: The positive index
- *
- * Return: The value of 2 exponent n
- */
+* two_pexp - Computes 2 raised to the given positive power
+* @n: The positive index
+*
+* Return: The value of 2 exponent n
+*/
 unsigned int two_pexp(unsigned int n)
 {
 	unsigned int result = 1;
@@ -136,12 +136,12 @@ unsigned int two_pexp(unsigned int n)
 }
 
 /**
- * u_long_to_hex - Converts an unsigned long to its string representation
- * @num: The unsigned long number
- * @upper: Specifies whether the hexadecimals should be in uppercase
- *
- * Return: The string representation of the number in hexadecimal notation
- */
+* u_long_to_hex - Converts an unsigned long to its string representation
+* @num: The unsigned long number
+* @upper: Specifies whether the hexadecimals should be in uppercase
+*
+* Return: The string representation of the number in hexadecimal notation
+*/
 char *u_long_to_hex(unsigned long num, char upper)
 {
 	int i;

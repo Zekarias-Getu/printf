@@ -4,12 +4,12 @@
 #include "main.h"
 
 /**
- * set_number - Retrieves a number from the given string
- * @str: The string to retrieve the number from
- * @number: The pointer to the number
- *
- * Return: The number of positions that were moved
- */
+* set_number - Retrieves a number from the given string
+* @str: The string to retrieve the number from
+* @number: The pointer to the number
+*
+* Return: The number of positions that were moved
+*/
 int set_number(const char *str, int *number)
 {
 	char digits[11] = {0};
@@ -32,11 +32,11 @@ int set_number(const char *str, int *number)
 }
 
 /**
- * set_length - Sets the length in a format info struct
- * @cur: The current character
- * @fmt_info: The pointer to the destination fmt_info_t struct
- * @pos: The pointer to the current position in the format string
- */
+* set_length - Sets the length in a format info struct
+* @cur: The current character
+* @fmt_info: The pointer to the destination fmt_info_t struct
+* @pos: The pointer to the current position in the format string
+*/
 void set_length(char cur, int *pos, fmt_info_t *fmt_info)
 {
 	fmt_info->is_long = cur == 'l' ? TRUE : fmt_info->is_long;
@@ -45,12 +45,12 @@ void set_length(char cur, int *pos, fmt_info_t *fmt_info)
 }
 
 /**
- * set_flags - Sets the flags in a format info struct
- * @str: The flag character string for set_flags
- * @fmt_info: The pointer to the destination fmt_info_t struct
- *
- * Return: The number of flags that were read
- */
+* set_flags - Sets the flags in a format info struct
+* @str: The flag character string for set_flags
+* @fmt_info: The pointer to the destination fmt_info_t struct
+*
+* Return: The number of flags that were read
+*/
 int set_flags(const char *str, fmt_info_t *fmt_info)
 {
 	int i = 0;
@@ -70,13 +70,13 @@ int set_flags(const char *str, fmt_info_t *fmt_info)
 }
 
 /**
- * set_precision - Reads a format info data into the given struct
- * @str: The string contained the format tokens
- * @args: The arguments list
- * @fmt_info: The pointer to the destination fmt_info_t struct
- * @i: The pointer to the position in the format string
- * @error_status: The pointer to the error variable
- */
+* set_precision - Reads a format info data into the given struct
+* @str: The string contained the format tokens
+* @args: The arguments list
+* @fmt_info: The pointer to the destination fmt_info_t struct
+* @i: The pointer to the position in the format string
+* @error_status: The pointer to the error variable
+*/
 void set_precision(const char *str, va_list args,
 	fmt_info_t *fmt_info, int *i, int *error_status)
 {
@@ -102,15 +102,15 @@ void set_precision(const char *str, va_list args,
 }
 
 /**
- * read_format_info - Reads a format info data into the given struct
- * @str: The string contained the format tokens
- * @args: The arguments list
- * @fmt_info: The pointer to the destination fmt_info_t struct
- * @last_token: Pointer to the last token from the format specifier
- *
- * Return: The number of positions to skip after the format character (%)
- * , this is negative when there's an error
- */
+* read_format_info - Reads a format info data into the given struct
+* @str: The string contained the format tokens
+* @args: The arguments list
+* @fmt_info: The pointer to the destination fmt_info_t struct
+* @last_token: Pointer to the last token from the format specifier
+*
+* Return: The number of positions to skip after the format character (%)
+* , this is negative when there's an error
+*/
 int read_format_info(const char *str, va_list args,
 	fmt_info_t *fmt_info, int *last_token)
 {

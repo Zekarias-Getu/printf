@@ -4,10 +4,10 @@
 #include "main.h"
 
 /**
- * convert_fmt_percent - Prints a percent sign (%)
- * @args_list: The argument list
- * @fmt_info: The format info
- */
+* convert_fmt_percent - Prints a percent sign (%)
+* @args_list: The argument list
+* @fmt_info: The format info
+*/
 void convert_fmt_percent(va_list *args_list, fmt_info_t *fmt_info)
 {
 	(void)args_list;
@@ -15,10 +15,10 @@ void convert_fmt_percent(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_p - Prints the pointer address
- * @args_list: The arguments list
- * @fmt_info: The format info
- */
+* convert_fmt_p - Prints the pointer address
+* @args_list: The arguments list
+* @fmt_info: The format info
+*/
 
 void convert_fmt_p(va_list *args_list, fmt_info_t *fmt_info)
 {
@@ -53,10 +53,10 @@ void convert_fmt_p(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_c - Prints a charcter
- * @args_list: The arguments list
- * @fmt_info: The format info
- */
+* convert_fmt_c - Prints a charcter
+* @args_list: The arguments list
+* @fmt_info: The format info
+*/
 void convert_fmt_c(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len = 1;
@@ -76,10 +76,10 @@ void convert_fmt_c(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_s - Print a string
- * @args_list: The arguments list
- * @fmt_info: The format info
- */
+* convert_fmt_s - Print a string
+* @args_list: The arguments list
+* @fmt_info: The format info
+*/
 void convert_fmt_s(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len;

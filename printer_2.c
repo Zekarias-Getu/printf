@@ -3,11 +3,11 @@
 #include "main.h"
 
 /**
- * convert_fmt_r -Print the reversed string
- * @args_list: The arguments list
- * @fmt_info: The format info
- * Return: The number of characters written
- */
+* convert_fmt_r -Print the reversed string
+* @args_list: The arguments list
+* @fmt_info: The format info
+* Return: The number of characters written
+*/
 void convert_fmt_r(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len;
@@ -34,11 +34,11 @@ void convert_fmt_r(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_R - Prints the rot13'ed string
- * @args_list: The arguments list
- * @fmt_info: The format info
- * Return: The number of characters written
- */
+* convert_fmt_R - Prints the rot13'ed string
+* @args_list: The arguments list
+* @fmt_info: The format info
+* Return: The number of characters written
+*/
 void convert_fmt_R(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len, is_low_1, is_low_2, is_upper, is_lower;
@@ -73,12 +73,12 @@ void convert_fmt_R(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_S - Prints a string and the hex code for
- * \ non-printable characters
- * @args_list: The arguments list
- * @fmt_info: The format info
- * Return: The number of characters written
- */
+* convert_fmt_S - Prints a string and the hex code for
+* \ non-printable characters
+* @args_list: The arguments list
+* @fmt_info: The format info
+* Return: The number of characters written
+*/
 void convert_fmt_S(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len;
@@ -119,10 +119,10 @@ void convert_fmt_S(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_b - Prints the binary format of an unsigned int argument
- * @args_list: The arguments list
- * @fmt_info: The format info
- */
+* convert_fmt_b - Prints the binary format of an unsigned int argument
+* @args_list: The arguments list
+* @fmt_info: The format info
+*/
 void convert_fmt_b(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, size = 32, len = 0;

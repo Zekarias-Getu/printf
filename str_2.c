@@ -2,13 +2,13 @@
 #include "main.h"
 
 /**
- * sub_str - Makes a copy of a subset of a string
- * @str: The string containing the subset
- * @i: The starting position of the subset
- * @can_free: Specifies if the given string can be freed
- *
- * Return: The string subset, otherwise NULL
- */
+* sub_str - Makes a copy of a subset of a string
+* @str: The string containing the subset
+* @i: The starting position of the subset
+* @can_free: Specifies if the given string can be freed
+*
+* Return: The string subset, otherwise NULL
+*/
 char *sub_str(char *str, int i, char can_free)
 {
 	char *new_str;
@@ -33,13 +33,13 @@ char *sub_str(char *str, int i, char can_free)
 }
 
 /**
- * trim_start - Makes a trimmed copy of a string
- * @str: The string whose beginning is to be trimmed
- * @c: The character to strip from the beginning of the string
- * @can_free: Specifies if the given string can be freed
- *
- * Return: The trimmed copy, otherwise NULL
- */
+* trim_start - Makes a trimmed copy of a string
+* @str: The string whose beginning is to be trimmed
+* @c: The character to strip from the beginning of the string
+* @can_free: Specifies if the given string can be freed
+*
+* Return: The trimmed copy, otherwise NULL
+*/
 char *trim_start(char *str, char c, char can_free)
 {
 	int i, j, len;
@@ -64,13 +64,13 @@ char *trim_start(char *str, char c, char can_free)
 }
 
 /**
- * trim_end - Makes a trimmed copy of a string
- * @str: The string whose ending is to be trimmed
- * @c: The character to strip from the end of the string
- * @can_free: Specifies if the given string can be freed
- *
- * Return: The trimmed copy, otherwise NULL
- */
+* trim_end - Makes a trimmed copy of a string
+* @str: The string whose ending is to be trimmed
+* @c: The character to strip from the end of the string
+* @can_free: Specifies if the given string can be freed
+
+* Return: The trimmed copy, otherwise NULL
+*/
 char *trim_end(char *str, char c, char can_free)
 {
 	char *new_str;
@@ -92,11 +92,11 @@ char *trim_end(char *str, char c, char can_free)
 }
 
 /**
- * str_copy - Makes a copy of a string
- * @str: The string to copy
- *
- * Return: The copied string, otherwise NULL
- */
+* str_copy - Makes a copy of a string
+* @str: The string to copy
+*
+* Return: The copied string, otherwise NULL
+*/
 char *str_copy(char *str)
 {
 	char *new_str;

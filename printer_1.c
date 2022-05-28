@@ -4,11 +4,11 @@
 #include "main.h"
 
 /**
- * convert_fmt_xX - Prints the hexadecimal format of an unsigned int argument
- * @agrs_list: the arguments list
- * @fmt_info: The format info
- * Return: The number of characters written
- */
+* convert_fmt_xX - Prints the hexadecimal format of an unsigned int argument
+* @agrs_list: the arguments list
+* @fmt_info: The format info
+* Return: The number of characters written
+*/
 void convert_fmt_xX(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len = 0, zeros_count = 0, max_w, max_p, num_len;
@@ -52,11 +52,11 @@ void convert_fmt_xX(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_di - Prints a signed integer
- * @args_list: The arguments list
- * @fmt_info: The format info
- * Return: The number of characters written
- */
+* convert_fmt_di - Prints a signed integer
+* @args_list: The arguments list
+* @fmt_info: The format info
+* Return: The number of characters written
+*/
 void convert_fmt_di(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i, len = 0, zeros_count = 0, num_len;
@@ -99,11 +99,11 @@ void convert_fmt_di(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * covert_fmt_o - Prints the octadecimal format of a signed int argument
- * @args_list: The arguments list
- * @fmt_info:the format info
- * Return: The number of characters written
- */
+* covert_fmt_o - Prints the octadecimal format of a signed int argument
+* @args_list: The arguments list
+* @fmt_info:the format info
+* Return: The number of characters written
+*/
 void convert_fmt_o(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i = 0, zeros_count = 0, num_len = 0, len = 0, max_w, max_p;
@@ -146,10 +146,10 @@ void convert_fmt_o(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * convert_fmt_u - Prints an unsigned integer
- * @args_list: The arguments list
- * @fmt_info: The format info
- */
+* convert_fmt_u - Prints an unsigned integer
+* @args_list: The arguments list
+* @fmt_info: The format info
+*/
 
 
 void convert_fmt_u(va_list *args_list, fmt_info_t *fmt_info)

@@ -6,11 +6,11 @@
 #include "main.h"
 
 /**
- * _printf - produces output according to a format
- * @format: The specified format
- *
- * Return: The number of characters that were printed
- */
+* _printf - produces output according to a format
+* @format: The specified format
+*
+* Return: The number of characters that were printed
+*/
 int _printf(const char *format, ...)
 {
 	int i = 0, tmp, processing_escape = FALSE, error = 1, last_token;
@@ -46,10 +46,10 @@ int _printf(const char *format, ...)
 }
 
 /**
- * write_format - Writes data formatted against some parameters
- * @args_list: The arguments list
- * @fmt_info: The format info parameters that were read
- */
+* write_format - Writes data formatted against some parameters
+* @args_list: The arguments list
+* @fmt_info: The format info parameters that were read
+*/
 void write_format(va_list *args_list, fmt_info_t *fmt_info)
 {
 	int i;
@@ -85,12 +85,12 @@ void write_format(va_list *args_list, fmt_info_t *fmt_info)
 }
 
 /**
- * _putstr - writes the given string to the buffer
- * @str: The string to write
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+* _putstr - writes the given string to the buffer
+* @str: The string to write
+*
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
 int _putstr(char *str)
 {
 	int i, out;
@@ -101,12 +101,12 @@ int _putstr(char *str)
 }
 
 /**
- * _putchar - writes the character c to the buffer
- * @c: The character to print
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+* _putchar - writes the character c to the buffer
+* @c: The character to print
+*
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
 int _putchar(char c)
 {
 	return (write_to_buffer(c, 0));
@@ -114,16 +114,16 @@ int _putchar(char c)
 
 /**
  * write_to_buffer - Writes a char to the buffer based on an action code
- * @c: The character to write
- * @action: The action to perform (
- * -1-> reset the static variables
- * 0-> write char to buffer
- * 1-> don't write character to buffer but empty buffer onto stdout
- * -2-> the number of characters written to stdout)
- *
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
- */
+* @c: The character to write
+* @action: The action to perform (
+* -1-> reset the static variables
+* 0-> write char to buffer
+* 1-> don't write character to buffer but empty buffer onto stdout
+* -2-> the number of characters written to stdout)
+*
+* Return: On success 1.
+* On error, -1 is returned, and errno is set appropriately.
+*/
 int write_to_buffer(char c, char action)
 {
 	static int i;

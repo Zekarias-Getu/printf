@@ -3,10 +3,10 @@
 #include "main.h"
 
 /**
- * print_repeat - Prints a character n times
- * @c: The character to print
- * @n: The number of times to print the character
- */
+* print_repeat - Prints a character n times
+* @c: The character to print
+* @n: The number of times to print the character
+*/
 void print_repeat(char c, int n)
 {
 	int i;
@@ -16,9 +16,9 @@ void print_repeat(char c, int n)
 }
 
 /**
- * _putnchars - Prints multiple characters
- * @n: The number of characters to print
- */
+* _putnchars - Prints multiple characters
+* @n: The number of characters to print
+*/
 void _putnchars(int n, ...)
 {
 	int i;
@@ -35,24 +35,24 @@ void _putnchars(int n, ...)
 }
 
 /**
- * is_letter - Checks if the given character is a letter
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_letter - Checks if the given character is a letter
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_letter(char c)
 {
 	return ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') ? TRUE : FALSE);
 }
 
 /**
- * set_format_error - Sets the error after reading a format specifier
- * @format: The format string
- * @pos: The current position in the format string
- * @len: The length of the format specifier minus 1
- * @last_token: The last token from the format specifier
- * @error: The format error flag
- */
+* set_format_error - Sets the error after reading a format specifier
+* @format: The format string
+* @pos: The current position in the format string
+* @len: The length of the format specifier minus 1
+* @last_token: The last token from the format specifier
+* @error: The format error flag
+*/
 void set_format_error(const char *format, int *pos, int len,
 	int last_token, int *error)
 {
@@ -89,11 +89,11 @@ void set_format_error(const char *format, int *pos, int len,
 }
 
 /**
- * put_num - Prints a number to the buffer
- * @zeros_count: The number of zeros to print
- * @num: The number
- * @str: The string representation of the number
- */
+* put_num - Prints a number to the buffer
+* @zeros_count: The number of zeros to print
+* @num: The number
+* @str: The string representation of the number
+*/
 void put_num(int zeros_count, long num, char *str)
 {
 	int i;

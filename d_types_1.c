@@ -3,13 +3,13 @@
 #include "main.h"
 
 /**
- * set_float_parts - Sets the float_info fields to the appropriate
- * \ parts of a given float
- * @num: The given float
- * @exponent_size: The number of bits in the exponent part
- * @mantissa_size: The number of bits in the mantissa part
- * @float_info: The float_info struct
- */
+* set_float_parts - Sets the float_info fields to the appropriate
+* \ parts of a given float
+* @num: The given float
+* @exponent_size: The number of bits in the exponent part
+* @mantissa_size: The number of bits in the mantissa part
+* @float_info: The float_info struct
+*/
 void set_float_parts(double num,	uchar_t exponent_size,
 	uchar_t mantissa_size, float_info_t *float_info)
 {
@@ -39,12 +39,12 @@ void set_float_parts(double num,	uchar_t exponent_size,
 }
 
 /**
- * mantissa_to_dec_fraction - Converts the mantissa of a float to a fraction
- * @mantissa: The mantissa to convert
- * @frac_len: The maximum length of the decimal fraction
- *
- * Return: The converted fraction
- */
+* mantissa_to_dec_fraction - Converts the mantissa of a float to a fraction
+* @mantissa: The mantissa to convert
+* @frac_len: The maximum length of the decimal fraction
+*
+* Return: The converted fraction
+*/
 char *mantissa_to_dec_fraction(char *mantissa, unsigned short frac_len)
 {
 	char *str, i, *pow2;
@@ -69,12 +69,12 @@ char *mantissa_to_dec_fraction(char *mantissa, unsigned short frac_len)
 }
 
 /**
- * float_to_str - Converts an IEEE 754 float to its string representation
- * @flt_info: The information about the float
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The string representation of the float, otherwise NULL
- */
+* float_to_str - Converts an IEEE 754 float to its string representation
+* @flt_info: The information about the float
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The string representation of the float, otherwise NULL
+*/
 char *float_to_str(float_info_t *flt_info, char can_free)
 {
 	uchar_t exponent_size = str_len(flt_info->exponent);

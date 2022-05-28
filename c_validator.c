@@ -1,23 +1,23 @@
 #include "main.h"
 
 /**
- * is_digit - Checks if the given character is a digit character
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_digit - Checks if the given character is a digit character
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_digit(char c)
 {
 	return (c >= '0' && c <= '9' ? TRUE : FALSE);
 }
 
 /**
- * is_non_custom_specifier - Checks if the given character is a non-custom
- * specifier character
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_non_custom_specifier - Checks if the given character is a non-custom
+* specifier character
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_non_custom_specifier(char c)
 {
 	switch (c)
@@ -44,12 +44,12 @@ char is_non_custom_specifier(char c)
 }
 
 /**
- * is_specifier - Checks if the given character is a
- * \ specifier character
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_specifier - Checks if the given character is a
+* \ specifier character
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_specifier(char c)
 {
 	if (is_non_custom_specifier(c))
@@ -72,11 +72,11 @@ char is_specifier(char c)
 }
 
 /**
- * is_flag - Checks if the given character is a flag character
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_flag - Checks if the given character is a flag character
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_flag(char c)
 {
 	switch (c)
@@ -94,11 +94,11 @@ char is_flag(char c)
 }
 
 /**
- * is_length - Checks if the given character is a length character
- * @c: The character to check
- *
- * Return: 1 or 0
- */
+* is_length - Checks if the given character is a length character
+* @c: The character to check
+*
+* Return: 1 or 0
+*/
 char is_length(char c)
 {
 	switch (c)

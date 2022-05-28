@@ -2,14 +2,14 @@
 #include "main.h"
 
 /**
- * round_float_to_int - Rounds a floating point number to an integer
- * @num: The floating point number to round
- * @len: The length of the floating-point number
- * @dec_pos: The position of the decimal point in the floating point number
- * @frac_len: The length of the fractional part in the floating point number
- *
- * Return: The integer, otherwise NULL
- */
+* round_float_to_int - Rounds a floating point number to an integer
+* @num: The floating point number to round
+* @len: The length of the floating-point number
+* @dec_pos: The position of the decimal point in the floating point number
+* @frac_len: The length of the fractional part in the floating point number
+*
+* Return: The integer, otherwise NULL
+*/
 char *round_float_to_int(char *num, int len, int dec_pos, int frac_len)
 {
 	int i;
@@ -34,13 +34,13 @@ char *round_float_to_int(char *num, int len, int dec_pos, int frac_len)
 }
 
 /**
- * round_float - Rounds a floating point number
- * @num: The floating point number to round
- * @precision: The number of precision of the fractional part
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The rounded float, otherwise NULL
- */
+* round_float - Rounds a floating point number
+* @num: The floating point number to round
+* @precision: The number of precision of the fractional part
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The rounded float, otherwise NULL
+*/
 char *round_float(char *num, unsigned int precision, char can_free)
 {
 	unsigned int dec_pos = index_of(num, '.'), len = (unsigned int)str_len(num);

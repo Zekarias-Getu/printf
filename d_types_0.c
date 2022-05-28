@@ -4,11 +4,11 @@
 #include "main.h"
 
 /**
- * u_long_to_str - Converts an unsigned long to its string representation
- * @num: The unsigned long integer
- *
- * Return: The string representation of the unsigned long integer
- */
+* u_long_to_str - Converts an unsigned long to its string representation
+* @num: The unsigned long integer
+*
+* Return: The string representation of the unsigned long integer
+*/
 char *u_long_to_str(unsigned long num)
 {
 	char *str;
@@ -34,11 +34,11 @@ char *u_long_to_str(unsigned long num)
 }
 
 /**
- * long_to_str - Converts a long to its string representation
- * @num: The long integer
- *
- * Return: The string representation of the long integer
- */
+* long_to_str - Converts a long to its string representation
+* @num: The long integer
+*
+* Return: The string representation of the long integer
+*/
 char *long_to_str(long num)
 {
 	char *str;
@@ -70,11 +70,11 @@ char *long_to_str(long num)
 }
 
 /**
- * ptr_to_str - Converts a pointer to its string representation
- * @ptr: The pointer
- *
- * Return: The string representation of the pointer
- */
+* ptr_to_str - Converts a pointer to its string representation
+* @ptr: The pointer
+*
+* Return: The string representation of the pointer
+*/
 char *ptr_to_str(void *ptr)
 {
 	int i, size;
@@ -119,11 +119,11 @@ char *ptr_to_str(void *ptr)
 }
 
 /**
- * is_invalid - Checks if a given float is invalid
- * @flt_info: The float info struct to check
- *
- * Return: NULL if it is valid, otherwise inf or nan
- */
+* is_invalid - Checks if a given float is invalid
+* @flt_info: The float info struct to check
+*
+* Return: NULL if it is valid, otherwise inf or nan
+*/
 char *is_invalid(float_info_t *flt_info)
 {
 	uchar_t exp_bits_on = 0, exp_all_on;

@@ -2,9 +2,9 @@
 #include "main.h"
 
 /**
- * init_format_info - initializes a format info struct
- * @spec: The format info to initialize
- */
+* init_format_info - initializes a format info struct
+* @spec: The format info to initialize
+*/
 void init_format_info(fmt_info_t *spec)
 {
 	if (spec)
@@ -29,9 +29,9 @@ void init_format_info(fmt_info_t *spec)
 }
 
 /**
- * new_format_info - Creates a new format info structure and initializes it
- * Return: The pointer to the newly created format info structure or NULL
- */
+* new_format_info - Creates a new format info structure and initializes it
+* Return: The pointer to the newly created format info structure or NULL
+*/
 fmt_info_t *new_format_info()
 {
 	fmt_info_t *spec;
@@ -43,11 +43,11 @@ fmt_info_t *new_format_info()
 }
 
 /**
- * new_float_info - Creates a new float_info struct
- * @exponent_size: The number of bits in the exponent
- * @mantissa_size: The number of bits in the mantissa
- * Return: The pointer to the newly created struct, otherwise NULL
- */
+* new_float_info - Creates a new float_info struct
+* @exponent_size: The number of bits in the exponent
+* @mantissa_size: The number of bits in the mantissa
+* Return: The pointer to the newly created struct, otherwise NULL
+*/
 float_info_t *new_float_info(ushort_t exponent_size, ushort_t mantissa_size)
 {
 	float_info_t *float_info;
@@ -69,9 +69,9 @@ float_info_t *new_float_info(ushort_t exponent_size, ushort_t mantissa_size)
 }
 
 /**
- * free_float_info - Frees the memory allocated to the given pointer
- * @flt_info: The pointer to free
- */
+* free_float_info - Frees the memory allocated to the given pointer
+* @flt_info: The pointer to free
+*/
 void free_float_info(float_info_t *flt_info)
 {
 	if (flt_info != NULL)
@@ -83,4 +83,3 @@ void free_float_info(float_info_t *flt_info)
 		free(flt_info);
 	}
 }
-

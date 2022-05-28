@@ -3,12 +3,12 @@
 #include "main.h"
 
 /**
- * multiply - Computes the product of a number and a multiple of 10
- * @num: The first number
- * @multiple: The second number (a multiple of 10)
- *
- * Return: A pointer containing the result, otherwise program fails
- */
+* multiply - Computes the product of a number and a multiple of 10
+* @num: The first number
+* @multiple: The second number (a multiple of 10)
+*
+* Return: A pointer containing the result, otherwise program fails
+*/
 char *multiply(char *num, char *multiple)
 {
 	int size, mult_len, num_len, i, j;
@@ -45,13 +45,13 @@ char *multiply(char *num, char *multiple)
 }
 
 /**
- * add_int - Adds two positive integers
- * @left: The first number
- * @right: The second number
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The sum of the two integers, otherwise NULL
- */
+* add_int - Adds two positive integers
+* @left: The first number
+* @right: The second number
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The sum of the two integers, otherwise NULL
+*/
 char *add_int(char *left, char *right, int can_free)
 {
 	int i, size, len1, len2;
@@ -90,13 +90,13 @@ char *add_int(char *left, char *right, int can_free)
 }
 
 /**
- * add_float - Adds two positive floating point numbers
- * @left: The first number
- * @right: The second number
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The sum of the two floats, otherwise NULL
- */
+* add_float - Adds two positive floating point numbers
+* @left: The first number
+* @right: The second number
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The sum of the two floats, otherwise NULL
+*/
 char *add_float(char *left, char *right, char can_free)
 {
 	int len1, len2, dec_pos1, dec_pos2, frac_len1, frac_len2, size;
@@ -141,13 +141,13 @@ char *add_float(char *left, char *right, char can_free)
 }
 
 /**
- * mul_int - Computes the product of two positive integers
- * @left: The first number
- * @right: The second number
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The product of the two numbers, otherwise NULL
- */
+* mul_int - Computes the product of two positive integers
+* @left: The first number
+* @right: The second number
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The product of the two numbers, otherwise NULL
+*/
 char *mul_int(char *left, char *right, char can_free)
 {
 	char *result, *product;
@@ -178,13 +178,13 @@ char *mul_int(char *left, char *right, char can_free)
 }
 
 /**
- * mul_float - Computes the product of two positive floats
- * @left: The first number
- * @right: The second number
- * @can_free: Specifies whether the given numbers can be freed
- *
- * Return: The product of the two floats, otherwise NULL
- */
+* mul_float - Computes the product of two positive floats
+* @left: The first number
+* @right: The second number
+* @can_free: Specifies whether the given numbers can be freed
+*
+* Return: The product of the two floats, otherwise NULL
+*/
 char *mul_float(char *left, char *right, char can_free)
 {
 	char *left_c = str_copy(left);

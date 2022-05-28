@@ -2,11 +2,11 @@
 #include "main.h"
 
 /**
- * hex_digit - converts a decimal less than 16 to its hexadecimal form
- * @c: The decimal
- *
- * Return: The hexadecimal digit, otherwise '\0'
- */
+* hex_digit - converts a decimal less than 16 to its hexadecimal form
+* @c: The decimal
+*
+* Return: The hexadecimal digit, otherwise '\0'
+*/
 char hex_digit(char c)
 {
 	char digits[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
@@ -17,12 +17,12 @@ char hex_digit(char c)
 }
 
 /**
- * cmp_nums - Compares the left number to the right number
- * @left: The left number
- * @right: The right number
- *
- * Return: 1 if left is > right, -1 if left < right, otherwise 0
- */
+* cmp_nums - Compares the left number to the right number
+* @left: The left number
+* @right: The right number
+*
+* Return: 1 if left is > right, -1 if left < right, otherwise 0
+*/
 char cmp_nums(char *left, char *right)
 {
 	char *num1 = left;
@@ -59,11 +59,11 @@ char cmp_nums(char *left, char *right)
 }
 
 /**
- * str_to_int - Converts a string to an int
- * @num: The string to convert
- *
- * Return: The converted number
- */
+* str_to_int - Converts a string to an int
+* @num: The string to convert
+*
+* Return: The converted number
+*/
 int str_to_int(char *num)
 {
 	int i = 1, len, exp = 1;
@@ -84,11 +84,11 @@ int str_to_int(char *num)
 }
 
 /**
- * bin_to_int - Converts an array of bits to an int
- * @bin_str: The array of bits
- *
- * Return: The decimal equivalent of the array of bits
- */
+* bin_to_int - Converts an array of bits to an int
+* @bin_str: The array of bits
+*
+* Return: The decimal equivalent of the array of bits
+*/
 int bin_to_int(char *bin_str)
 {
 	int len = str_len(bin_str);
@@ -108,11 +108,11 @@ int bin_to_int(char *bin_str)
 }
 
 /**
- * long_to_oct - Converts a long integer to its octal representation
- * @num: The number to convert
- *
- * Return: The octal representation of the number, otherwise NULL
- */
+* long_to_oct - Converts a long integer to its octal representation
+* @num: The number to convert
+*
+* Return: The octal representation of the number, otherwise NULL
+*/
 char *long_to_oct(unsigned long num)
 {
 	int i = 0, size = num == 0 ? 2 : 21;
