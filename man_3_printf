@@ -1,5 +1,5 @@
 .\" Manpage for _PRINTF.
-.TH man 8 "19 April 2022" "1.0" "_PRINTF USER COMMANDS"
+.TH man 8 "28 May 2022" "1.0" "_PRINTF USER COMMANDS"
 .SH NAME
 _printf \- formats and prints data
 .SH SYNOPSIS
